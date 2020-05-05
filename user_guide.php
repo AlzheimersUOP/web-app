@@ -54,69 +54,17 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#feature">Features</a></li>
-          <li><a href="#organisations">Organisations</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li class="btn-trial"><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a style="color: #5fcf80;">User guide</a></li>
+          <li><a href="manual.php">Manual</a></li>
+          <li><a href="nomenclature.php">Nomenclature</a></li>
+          <li><a href="crash_courses.php">Crash course</a></li>
+          <li><a href="faq.php">Faq</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <!--/ Navigation bar-->
-
-  <!--Modal box-->
-  <div class="modal fade" id="login" role="dialog">
-    <div class="modal-dialog modal-sm">
-
-      <!-- Modal content no 1-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title text-center form-title">Login</h4>
-        </div>
-        <div class="modal-body padtrbl">
-
-          <div class="login-box-body">
-            <p class="login-box-msg">Sign in to start your session</p>
-            <div class="form-group">
-              <form name="" id="loginForm">
-                <div class="form-group has-feedback">
-                  <!----- username -------------->
-                  <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" />
-                  <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
-                  <!---Alredy exists  ! -->
-                  <span class="glyphicon glyphicon-user form-control-feedback"></span>
-                </div>
-                <div class="form-group has-feedback">
-                  <!----- password -------------->
-                  <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
-                  <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
-                  <!---Alredy exists  ! -->
-                  <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                </div>
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="checkbox icheck">
-                      <label>
-                                <input type="checkbox" id="loginrem" > Remember Me
-                              </label>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <!--/ Modal box-->
 
   <!--Banner-->
   <div class="banner-manual">
@@ -184,7 +132,6 @@
               <h3 class="det-txt-manual">Getting Started</h3>
               <p class="det-p-manual">Are you a first time user? Then Sign up or sign in with your Google account. After that, you can just log in anytime you like.</p>
             </hgroup>
-            <h4 class="sm-txt-manual"><a href="manual.html#step_2" target="_blank">link</a></h4>
           </div>
         </div>
       </div>
@@ -238,13 +185,70 @@
               <h3 class="det-txt-manual">Home Page</h3>
               <p class="det-p-manual">Each component in the Home page corresponds to the specific tasks. You can initiate each step by clicking on the relevant steps. You cannot directly navigate to some steps without going through the previous steps. In any instance, the steps you can perform will be shown in a dark color mode. The steps you cannot yet perform will appear in a lighter color.</p>
             </hgroup>
-            <h4 class="sm-txt-manual">link</h4>
           </div>
         </div>
       </div>
     </div>
   </section>
   <!--/ step_2-->
+
+  <!--step_21-->
+  <section id="step_21" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+            <div id="myCarousel_step_21" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>                                
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+
+                <div class="item active">
+                  <img src="img/manual/step_21/img1.jpg" style="width:100%;">
+                </div>
+                <div class="item">
+                  <img src="img/manual/step_21/img2.jpg" style="width:100%;">
+                </div>
+                <div class="item">
+                  <img src="img/manual/step_21/img3.jpg" style="width:100%;">
+                </div>
+                <div class="item">
+                  <img src="img/manual/step_21/img4.jpg" style="width:100%;">
+                </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel_step_21" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel_step_21" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-info">
+            <hgroup>
+              <h3 class="det-txt-manual">Tour around GeNet</h3>
+              <ul style="list-style-type: square; text-align: justify;">
+                <li>Click on the “START TOUR” to get simple tips and instructions.</li>
+                <li>Click on the bell icon at the bottom right corner of the page to mute/ unmute the tour.</li>
+              </ul>
+            </hgroup>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ step_21-->
 
   <!--step_3-->
   <section id="step_3" class="section-padding">
@@ -290,9 +294,10 @@
                 <li>If you just want to get hands-on experience with GeNet, you can just select a sample file by clicking on the “SELECT SAMPLE FILE” button.</li>
                 <li>You can view the sample file by downloading it through the “DOWNLOAD SAMPLE FILE” button.</li>
                 <li>After choosing your data set (.csv file) click on the “SUBMIT” button to continue.</li>
+                <li>Click on the “info” icon to get more information on the input format of the data file.</li>               
               </ul>
-            </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+              <h4 class="sm-txt-manual"><a href="manual.php#upload_link" target="_blank">Click here for more info on the input format</a></h4>               
+            </hgroup>
           </div>
         </div>
       </div>
@@ -305,12 +310,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-            <div id="myCarousel_step_4" class="carousel slide" data-ride="carousel" style="    margin-top: 10%;">
+            <div id="myCarousel_step_4" class="carousel slide" data-ride="carousel" style="margin-top: 10%;">
               <!-- Indicators -->
               <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
               </ol>
 
               <!-- Wrapper for slides -->
@@ -328,15 +334,19 @@
                   <img src="img/manual/step_4/img3.jpg" style="width:100%;">
                 </div>
 
-              <!-- Left and right controls -->
-              <a class="left carousel-control" href="#myCarousel_step_4" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel_step_4" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-              </a>
+                <div class="item">
+                  <img src="img/manual/step_4/img4.jpg" style="width:100%;">
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel_step_4" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel_step_4" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
             </div>
           </div>
         </div>
@@ -351,9 +361,10 @@
                 <li>If you want to proceed without mapping to gene symbols, click “SKIP MAPPING” button.</li>
                 <li>If you want to map the probe_IDs to gene symbols click “SUBMIT”.</li>
                 <li>If you want to get a quick glance at your data set, you can do so by clicking on the “View” button.</li>
+                <li><b>Interquartile Range:</b> You can choose the interquartile range of all the values corresponding to a particular gene symbol for each sample.</li>
               </ul>
+              <h4 class="sm-txt-manual"><a href="manual.php#preprocess_link" target="_blank">Click here for more info on annotation tables and probe selection methods</a></h4>
             </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
           </div>
         </div>
       </div>
@@ -411,7 +422,7 @@
                 <li>Use the search bar to type in any value you want to search in the data set.</li>
               </ul>
             </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            <h4 class="sm-txt-manual"><a href="manual.php#view_tb_link" target="_blank">Click this to see more details on the data set</a></h4>
           </div>
         </div>
       </div>
@@ -441,8 +452,7 @@
                 <li>This page shows your data set after the probe_IDs have been mapped into the gene symbols.</li>
                 <li>Click “CONTINUE” to proceed.</li>
               </ul>
-            </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            </hgroup>
           </div>
         </div>
       </div>
@@ -488,14 +498,14 @@
         <div class="col-md-6">
           <div class="detail-info">
             <hgroup>
-              <h3 class="det-txt-manual">Scaling and Imputation</h3>
+              <h3 class="det-txt-manual">Normalization and Imputation</h3>
               <ul style="list-style-type: square; text-align: justify;">
                 <li>Select the scaling method by clicking on the drop-down menu in the scaling tab.</li>
                 <li>Select how you wish to handle the missing values by choosing a method from the Imputation tab.</li>
                 <li>If you are all set, click on “PRE_PROCESS”.</li>
               </ul>
             </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            <h4 class="sm-txt-manual"><a href="manual.php#imputation_link" target="_blank">Click here for more info on normalization and imputation.</a></h4>
           </div>
         </div>
       </div>
@@ -526,7 +536,7 @@
                 <li>Click “CONTINUE” to proceed.</li>
               </ul>
             </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            <h4 class="sm-txt-manual"><a href="manual.php#after_pre_data_tb_link" target="_blank">Click this to see more details on the modified data set</a></h4>
           </div>
         </div>
       </div>
@@ -588,7 +598,7 @@
                 <li>After you select the appropriate values click on “CALCULATE” to filter out relevant genes.</li>
               </ul>
             </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            <h4 class="sm-txt-manual"><a href="manual.php#fold_link" target="_blank">Click this to get more info on Fold Change and P-Values</a></h4>
           </div>
         </div>
       </div>
@@ -645,7 +655,7 @@
                 <li>After this step, your pre-processed file is automatically saved on your profile.</li>
               </ul>
             </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            <h4 class="sm-txt-manual"><a href="manual.php#feature_reduction_link" target="_blank">Click this to get more info on this step</a></h4>
           </div>
         </div>
       </div>
@@ -704,7 +714,7 @@
                 <li>Click “CONTINUE” to proceed.</li>
               </ul>
             </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            <h4 class="sm-txt-manual"><a href="manual.php#feature_selection" target="_blank">Click here to learn more about feature selection methods</a></h4>
           </div>
         </div>
       </div>
@@ -764,11 +774,12 @@
               <ul style="list-style-type: square; text-align: justify;">
                 <li>Click on each part of the Venn diagram to get the details of the genes found by each method.</li>
                 <li>Click on each gene symbol to get more details on the functionality of the gene.</li>
+                <li>Click "MORE DETAILS" to view more details on the specific gene</li>
                 <li>View the list of genes by choosing either the “GRID” option or the “LIST” option.</li>
                 <li>Click “Analyze” to proceed.</li>
               </ul>
             </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            <h4 class="sm-txt-manual"><a href="manual.php#results_link" target="_blank">Click here to understand the results better</a></h4>
           </div>
         </div>
       </div>
@@ -817,10 +828,10 @@
               <h3 class="det-txt-manual">Analysis</h3>
               <ul style="list-style-type: square; text-align: justify;">
                 <li>If you are proceeding from the beginning, the pre-processed file is automatically added to the Selected File tab. Click on the “Change File” icon if you want to analyze results for a different file.</li>
-                <li>Select the one method to proceed with the analysis.</li>
+                <li>Select one method to proceed with the analysis.</li>
               </ul>
             </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            <h4 class="sm-txt-manual"><a href="manual.php#analysis_link" target="_blank">Click here to learn more about analysis steps</a></h4>
           </div>
         </div>
       </div>
@@ -873,11 +884,12 @@
             <hgroup>
               <h3 class="det-txt-manual">Analysis of Results by Correlation Values</h3>
               <ul style="list-style-type: square; text-align: justify;">
-                <li>These pages show the final set of genes selected by the above 3 methods and how they are selected.</li>
+                <li>The first section of this page shows the variation of correlation coefficients with regard to the 3 feature selection methods.</li>
+                <li>The second section shows the behavior of the genes selected by considering correlation values obtained for the genes selected by the method specified in the previous step.</li>
                 <li>Click “CONTINUE” to proceed.</li>
               </ul>
             </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            <h4 class="sm-txt-manual"><a href="manual.php#analysis_results_link" target="_blank">Click here to learn more about this step</a></h4>
           </div>
         </div>
       </div>
@@ -930,11 +942,12 @@
             <hgroup>
               <h3 class="det-txt-manual">Selected features</h3>
               <ul style="list-style-type: square; text-align: justify;">
+                <li>The infobox at the top of the page shows the number of genes selected by each method. Click on “more” to view their gene symbols.</li>
                 <li>To compare your results with already available data, select the type of disease you want to check with.</li>
                 <li>Click “VALIDATE” to proceed.</li>
               </ul>
             </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            <h4 class="sm-txt-manual"><a href="manual.php#final_results_link" target="_blank">Click here to get more information on the results obtained</a></h4>
           </div>
         </div>
       </div>
@@ -985,13 +998,13 @@
         <div class="col-md-6">
           <div class="detail-info">
             <hgroup>
-              <h3 class="det-txt-manual">validation</h3>
+              <h3 class="det-txt-manual">Validation</h3>
               <ul style="list-style-type: square; text-align: justify;">
                 <li>This page shows the relationship of genes selected by GeNet and the genes validated by biological sources.</li>
                 <li>Click on “Modeling” to proceed to modeling steps.</li>
               </ul>
             </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            <h4 class="sm-txt-manual"><a href="manual.php#validation_link" target="_blank">Click here to learn more about validation</a></h4>
           </div>
         </div>
       </div>
@@ -1051,7 +1064,7 @@
                 <li>Click on “Let’s try” to try and predict the results of a new data set.</li>
               </ul>
             </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            <h4 class="sm-txt-manual"><a href="manual.php#modeling_link" target="_blank">What is Modeling?</a></h4>
           </div>
         </div>
       </div>
@@ -1111,7 +1124,7 @@
                 <li>Click on submit to see the predicted results.</li>
               </ul>
             </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            <h4 class="sm-txt-manual"><a href="manual.php#prediction_link" target="_blank">Click here for more info on prediction</a></h4>
           </div>
         </div>
       </div>
@@ -1162,8 +1175,7 @@
                 <li>This page shows the prediction results of each sample.</li>
                 <li>Download the prediction results by clicking on the download icon.</li>
               </ul>
-            </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            </hgroup>
           </div>
         </div>
       </div>
@@ -1172,7 +1184,7 @@
   <!--/ step_19-->
 
     <!--step_20-->
-  <section id="step_20" class="section-padding">
+  <section id="step_20" class="section-padding" style="padding-bottom: 30px;">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -1221,7 +1233,7 @@
                 <li>Click on “UPDATE” to visualize different plots.</li>
               </ul>
             </hgroup>            
-            <h4 class="sm-txt-manual">link</h4>
+            <h4 class="sm-txt-manual"><a href="manual.php#visualization_link" target="_blank">Click here to learn more about visualization steps</a></h4>
           </div>
         </div>
       </div>
@@ -1229,52 +1241,7 @@
   </section>
   <!--/ step_20-->
 
-  <!--Footer-->
-  <footer id="footer" class="footer">
-    <div class="container text-center">
-
-      <h3>Stay in touch with us for the latest updates!</h3>
-
-      <form class="mc-trial row">
-        <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
-          <div class=" controls">
-            <input name="name" placeholder="Enter Your Name" class="form-control" type="text">
-          </div>
-        </div>
-        <!-- End email input -->
-        <div class="form-group col-md-3 col-sm-4">
-          <div class=" controls">
-            <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">
-          </div>
-        </div>
-        <!-- End email input -->
-        <div class="col-md-2 col-sm-4">
-          <p>
-            <button name="submit" type="submit" class="btn btn-block btn-submit">
-            Submit <i class="fa fa-arrow-right"></i></button>
-          </p>
-        </div>
-      </form>
-      <!-- End newsletter-form -->
-      <ul class="social-links">
-        <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa fa-github fa-fw fa-fw"></i></a></li>
-      </ul>
-      ©2020 GeNet team. All rights reserved
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Mentor
-        -->
-        Designed by Department of Computer Engineering, University of Peradeniya
-      </div>
-    </div>
-  </footer>
-  <!--/ Footer-->
+<?php include 'footer.php';?>
 
 </body>
 
@@ -1284,5 +1251,6 @@
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
-<script src="contactform/contactform.js"></script>
+<script src="contactform/subscribe.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 

@@ -12,7 +12,7 @@
   <link rel="icon" href="img/logo/favicon.png" sizes="192x192" />
   <link rel="apple-touch-icon-precomposed" href="img/logo/favicon.png" />
 
-  <meta name="description" content="GeNet is a microarray gene expression analysis tool kit. It is a python based web application that can be used to preprocess, visualize, analyze, model, and predict results using microarray gene expression data">
+  <meta name="description" content="Dive deeper into GeNet. This manual provides an in-detail step by step guide for each step in GeNet">
   <meta name="keywords" content="genet, gene expression, microarray">
 
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
@@ -55,69 +55,17 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#feature">Features</a></li>
-          <li><a href="#organisations">Organisations</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li class="btn-trial"><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="user_guide.php">User guide</a></li>
+          <li><a style="color: #5fcf80;">Manual</a></li>
+          <li><a href="nomenclature.php">Nomenclature</a></li>
+          <li><a href="crash_courses.php">Crash course</a></li>
+          <li><a href="faq.php">Faq</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <!--/ Navigation bar-->
-
-  <!--Modal box-->
-  <div class="modal fade" id="login" role="dialog">
-    <div class="modal-dialog modal-sm">
-
-      <!-- Modal content no 1-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title text-center form-title">Login</h4>
-        </div>
-        <div class="modal-body padtrbl">
-
-          <div class="login-box-body">
-            <p class="login-box-msg">Sign in to start your session</p>
-            <div class="form-group">
-              <form name="" id="loginForm">
-                <div class="form-group has-feedback">
-                  <!----- username -------------->
-                  <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" />
-                  <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
-                  <!---Alredy exists  ! -->
-                  <span class="glyphicon glyphicon-user form-control-feedback"></span>
-                </div>
-                <div class="form-group has-feedback">
-                  <!----- password -------------->
-                  <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
-                  <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
-                  <!---Alredy exists  ! -->
-                  <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                </div>
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="checkbox icheck">
-                      <label>
-                                <input type="checkbox" id="loginrem" > Remember Me
-                              </label>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <!--/ Modal box-->
 
   <!--Banner-->
   <div class="banner-manual">
@@ -130,7 +78,7 @@
             </div>
             <div class="intro-para text-center quote">
 <!--               <p class="big-text">From unrefined data to meaningful insights</p> -->
-              <p class="small-text">“GeNet is a microarray gene expression analysis tool kit. It is a python based web application that can be used to preprocess,<br>visualize, analyze, model, and predict results using microarray gene expression data”</p>
+              <p class="small-text">“Dive deeper into GeNet. This manual provides an in-detail step by step guide for each step in GeNet”</p>
             </div>
           </div>
         </div>
@@ -139,7 +87,7 @@
   </div>
   <!--/ Banner-->
 
-  <section id="step_1" class="section-padding-manual">
+  <section id="upload_link" class="section-padding-manual">
     <div class="container">
       <div class="row">
           <h3 class="det-txt-manual">Upload Files</h3>
@@ -167,7 +115,7 @@
         <div class="col-md-6">
           <div class="detail-info">
             <hgroup>
-              <p class="det-p-manual">02. The column headers(except the first column) contains the Probe IDs. A probe ID is a unique ID given for a probe/spot in microarray experiments (LINK to microarray experiments). For example, here the probe IDs are 1007_s_at, 1053_at, 117_at, etc.</p>
+              <p class="det-p-manual" style="display: inline;">02. The column headers(except the first column) contains the Probe IDs. A probe ID is a unique ID given for a probe/spot in <p class="sm-txt-manual" style="display: inline;"><a href="nomenclature.php#gene_expression" target="_blank">microarray experiments</a></p>. For example, here the probe IDs are 1007_s_at, 1053_at, 117_at, etc.</p>
               <p class="det-p-manual">03. A row represents the gene expression data values of all the probe IDs with respect to a given sample. This highlighted row represents the gene expression data values for every probe ID in the sample GSM119618.</p>
               <p class="det-p-manual">04. The cells in the highlighted area can only contain numerical values. They contain gene expression values of the samples tested upon different probe_IDs.</p>
             </hgroup>
@@ -194,7 +142,7 @@
   <!--/ step_1-->
 
   <!--step_2-->
-  <section id="step_2" class="section-padding-manual">
+  <section id="preprocess_link" class="section-padding-manual">
     <div class="container">
       <div class="row">
         <h3 class="det-txt-manual">Pre-processing</h3>
@@ -240,7 +188,7 @@
   <!--/ step_2-->
 
   <!-- step_3-->
-  <section id="step_1" class="section-padding-manual">
+  <section id="view_tb_link" class="section-padding-manual">
     <div class="container">
       <div class="row">
           <h3 class="det-txt-manual">Viewing the Data Set</h3>
@@ -263,10 +211,10 @@
   <!--/ step_3-->
 
   <!--step_4-->
-  <section id="step_2" class="section-padding-manual">
+  <section id="imputation_link" class="section-padding-manual">
     <div class="container">
       <div class="row">
-        <h3 class="det-txt-manual">Scaling and Imputation</h3>
+        <h3 class="det-txt-manual">Normalization and Imputation</h3>
       </div>      
       <div class="row">
         <div class="col-md-6">
@@ -316,8 +264,8 @@
   </section>
   <!--/ step_4-->
 
-  <!-- step_3-->
-  <section id="step_1" class="section-padding-manual">
+  <!-- step_5-->
+  <section id="after_pre_data_tb_link" class="section-padding-manual">
     <div class="container">
       <div class="row">
           <h3 class="det-txt-manual">Data Set after Pre-processing</h3>
@@ -337,10 +285,10 @@
       </div>           
     </div>
   </section>
-  <!--/ step_3-->
+  <!--/ step_5-->
 
-  <!--step_4-->
-  <section id="step_2" class="section-padding-manual">
+  <!--step_6-->
+  <section id="fold_link" class="section-padding-manual">
     <div class="container">
       <div class="row">
         <h3 class="det-txt-manual">Setting the Range of Fold Change and P-Values</h3>
@@ -382,10 +330,10 @@
       </div>            
     </div>
   </section>
-  <!--/ step_4-->
+  <!--/ step_6-->
 
-  <!-- step_3-->
-  <section id="step_1" class="section-padding-manual">
+  <!-- step_7-->
+  <section id="feature_reduction_link" class="section-padding-manual">
     <div class="container">
       <div class="row">
           <h3 class="det-txt-manual">Feature Reduction</h3>
@@ -424,10 +372,10 @@
         </div>
       </div>
   </section>
-  <!--/ step_3-->
+  <!--/ step_7-->
 
-  <!--step_4-->
-  <section id="step_2" class="section-padding-manual">
+  <!--step_8-->
+  <section id="feature_selection" class="section-padding-manual">
     <div class="container">
       <div class="row">
         <h3 class="det-txt-manual">Feature Selection</h3>
@@ -460,10 +408,10 @@
       </div>                                            
     </div>
   </section>
-  <!--/ step_4-->
+  <!--/ step_8-->
 
-  <!-- step_3-->
-  <section id="step_1" class="section-padding-manual">
+  <!-- step_9-->
+  <section id="results_link" class="section-padding-manual">
     <div class="container">
       <div class="row">
           <h3 class="det-txt-manual">Results</h3>
@@ -497,10 +445,10 @@
         </div>
       </div>
   </section>
-  <!--/ step_3-->
+  <!--/ step_9-->
 
-  <!--step_4-->
-  <section id="step_2" class="section-padding-manual">
+  <!--step_10-->
+  <section id="analysis_link" class="section-padding-manual">
     <div class="container">
       <div class="row">
         <h3 class="det-txt-manual">Analysis</h3>
@@ -578,10 +526,10 @@
       </div>                                            
     </div>
   </section>
-  <!--/ step_4-->
+  <!--/ step_10-->
 
-  <!-- step_3-->
-  <section id="step_1" class="section-padding-manual">
+  <!-- step_11-->
+  <section id="analysis_results_link" class="section-padding-manual">
     <div class="container">
       <div class="row">
           <h3 class="det-txt-manual">Analysis of Results by Correlation Values</h3>
@@ -633,10 +581,10 @@
         </div>
       </div>      
   </section>
-  <!--/ step_3-->
+  <!--/ step_11-->
 
-  <!--step_4-->
-  <section id="step_2" class="section-padding-manual">
+  <!--step_12-->
+  <section id="final_results_link" class="section-padding-manual">
     <div class="container">
       <div class="row">
         <h3 class="det-txt-manual">Final Results</h3>
@@ -699,10 +647,10 @@
       </div>
     </div>
   </section>
-  <!--/ step_4-->
+  <!--/ step_12-->
 
-  <!-- step_3-->
-  <section id="step_1" class="section-padding-manual">
+  <!-- step_13-->
+  <section id="validation_link" class="section-padding-manual">
     <div class="container">
       <div class="row">
           <h3 class="det-txt-manual">Validation</h3>
@@ -740,10 +688,10 @@
       </div>
     </div>      
   </section>
-  <!--/ step_3-->
+  <!--/ step_13-->
 
-  <!--step_4-->
-  <section id="step_2" class="section-padding-manual">
+  <!--step_14-->
+  <section id="modeling_link" class="section-padding-manual">
     <div class="container">
       <div class="row">
         <h3 class="det-txt-manual">Modeling</h3>
@@ -765,10 +713,10 @@
       </div>
     </div>
   </section>
-  <!--/ step_4-->
+  <!--/ step_14-->
 
-  <!-- step_3-->
-  <section id="step_1" class="section-padding-manual">
+  <!-- step_15-->
+  <section id="prediction_link" class="section-padding-manual">
     <div class="container">
       <div class="row">
           <h3 class="det-txt-manual">Prediction</h3>
@@ -789,10 +737,10 @@
       </div>
     </div>      
   </section>
-  <!--/ step_3-->
+  <!--/ step_15-->
 
-  <!--step_4-->
-  <section id="step_2" class="section-padding-manual">
+  <!--step_16-->
+  <section id="visualization_link" class="section-padding-manual">
     <div class="container">
       <div class="row">
         <h3 class="det-txt-manual">Visualization</h3>
@@ -821,53 +769,9 @@
       </div>
     </div>
   </section>
-  <!--/ step_4-->
-  <!--Footer-->
-  <footer id="footer" class="footer">
-    <div class="container text-center">
+  <!--/ step_16-->
 
-      <h3>Stay in touch with us for the latest updates!</h3>
-
-      <form class="mc-trial row">
-        <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
-          <div class=" controls">
-            <input name="name" placeholder="Enter Your Name" class="form-control" type="text">
-          </div>
-        </div>
-        <!-- End email input -->
-        <div class="form-group col-md-3 col-sm-4">
-          <div class=" controls">
-            <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">
-          </div>
-        </div>
-        <!-- End email input -->
-        <div class="col-md-2 col-sm-4">
-          <p>
-            <button name="submit" type="submit" class="btn btn-block btn-submit">
-            Submit <i class="fa fa-arrow-right"></i></button>
-          </p>
-        </div>
-      </form>
-      <!-- End newsletter-form -->
-      <ul class="social-links">
-        <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa fa-github fa-fw fa-fw"></i></a></li>
-      </ul>
-      ©2020 GeNet team. All rights reserved
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Mentor
-        -->
-        Designed by Department of Computer Engineering, University of Peradeniya
-      </div>
-    </div>
-  </footer>
-  <!--/ Footer-->
+<?php include 'footer.php';?>
 
 </body>
 
@@ -877,7 +781,8 @@
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
-<script src="contactform/contactform.js"></script>
+<script src="contactform/subscribe.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
 <script type="text/javascript">
 
