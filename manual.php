@@ -38,6 +38,7 @@
   .det-p-head{
     padding: 10px 0 0 0;
   }
+
 </style>
 <body>
   <!--Navigation bar-->
@@ -152,7 +153,12 @@
           <div class="detail-info">
             <hgroup>
               <p class="det-p-head"><b>Annotation table</b></p>
-              <p class="det-p-manual">In your previously uploaded data set, the gene expression values correspond to probe_IDs. Multiple  probe_IDs can map to the same gene.  Also, a probe/spot may contain information about multiple genes. Genes are identified by their gene symbol or gene ID. Annotation tables are tables that contain data about the probe_IDs and their respective gene symbols. If you want to proceed with gene symbols and get your final results in terms of genes, you have to map the probe_IDs to their gene symbols.</p>
+              <p class="det-p-manual">In your previously uploaded data set, the gene expression values correspond to probe_IDs. Multiple  probe_IDs can map to the same gene.  Also, a probe/spot may contain information about multiple genes. Genes are identified by their gene symbol or gene ID. Annotation tables are tables that contain data about the probe_IDs and their respective gene symbols. If you want to proceed with gene symbols and get your final results in terms of genes, you have to map the probe_IDs to their gene symbols. When uploading the custom annotation tables, it should be in the following format.</p>
+              <ul style="list-style-type: square; text-align: justify;">
+                <li>The file should be a (.csv) file.</li>
+                <li>The first column should be named as “ID” and should contain the probe_ID names.</li>
+                <li>The second column should be named as “Gene Symbol” and contain the details on gene symbols.</li>
+              </ul>
             </hgroup>
           </div>
         </div>
@@ -249,9 +255,8 @@
           <div class="detail-info">
             <hgroup>
               <p class="det-p-manual">The data set might also contain missing values. These missing values may sometimes skew the results if not handled properly. Missing data presents various problems. First, the absence of data reduces statistical power, which refers to the probability that the test will reject the null hypothesis when it is false. Second, the lost data can cause bias in the estimation of parameters. Third, it can reduce the representativeness of the samples. Fourth, it may complicate the analysis of the study.</p>
-              <p class="det-p-manual">One of the simplest methods to reduce the impact of missing values is to drop the complete sample including the missing values so that it won’t skew the results. However, when the sample size is small, this might not be a good approach. Instead of dropping the whole sample, you can replace the missing value with the average of present values which will be a fair indicator of the missing values.</p> 
+              <p class="det-p-manual">One of the simplest methods to reduce the impact of missing values is to drop the complete sample including the missing values so that it won’t skew the results. However, when the sample size is small, this might not be a good approach. Instead of dropping the whole sample, you can replace the missing value with the average of present values which will be a fair indicator of the missing values.</p><h4 class="sm-txt-manual"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3668100/" target="_blank">Reference: Kang, Hyun. "The prevention and handling of the missing data." Korean journal of anesthesiology 64.5 (2013): 402.</a></h4>
             </hgroup>
-            <h4 class="sm-txt-manual">Reference: The prevention and handling of the missing data</h4>
           </div>
         </div>
         <div class="col-md-6" style="margin-top: 30px;">
@@ -350,7 +355,7 @@
         <div class="col-md-6">
           <div class="detail-info">
             <hgroup>
-              <p class="det-p-manual">As the first step in the framework, GeNet uses univariate selection values. Univariate feature selection works by selecting the best features based on univariate statistical tests. The scores are calculated using scikit learns’ selectKBest method.</p>
+              <p class="det-p-manual" style="display: inline;">As the first step in the framework, GeNet uses univariate selection values. Univariate feature selection works by selecting the best features based on univariate statistical tests. The scores are calculated using scikit learns’ <h4 class="sm-txt-manual" style="display: inline;"><a href="https://scikit-learn.org/0.18/modules/generated/sklearn.feature_selection.SelectKBest.html#sklearn.feature_selection.SelectKBest" target="_blank">selectKBest</a></h4> method.</p>
               <p class="det-p-manual">The graph shows the scores of genes based on their importance for a particular target. The y-axis of the graph shows the number of genes. By observing this graph, you can get an idea of the number of genes showing the highest scores. You can see that after the bending point of the graph, the variation of scores is not changing much. That implies that those genes do not have a high impact on the target variable. To minimize the number of features, you can only select the number of genes appearing before the bending point of the graph.</p>
             </hgroup>
           </div>
@@ -365,7 +370,6 @@
         <div class="col-md-6">
           <div class="detail-info">
             <hgroup>
-              <p class="det-p-manual">Classification Result graph at the right to the page shows the accuracy obtained by 6 different classifiers. A classifier is a system where you input data and then obtain outputs related to the grouping (i.e.: classification) in which those inputs belong to. These classifiers take the data set containing only the data of the gene list filtered by p-values and fold changes and train them using these classifiers. The accuracy is shown as percentages in the second column.</p>
               <p class="det-p-manual">The performance of classifiers differs from each data set. Therefore, to proceed further, we select the best 3 classifiers showing the best results out of the 6 classifiers. “Selected Classifiers” refers to these selected methods. They will be used in the next steps of the framework.</p>
             </hgroup>
           </div>
@@ -439,7 +443,7 @@
         <div class="col-md-6">
           <div class="detail-info">
             <hgroup>
-              <p class="det-p-manual">When building our model, we split the data set into 2 parts called testing and training data set. We applied k- fold cross validation when training data. The graph shows the variation of the accuracy of the data set for the model with only the genes selected by each method trained upon the above selected best 3 classifiers.</p>
+              <p class="det-p-manual" style="display: inline;">When building our model, we split the data set into 2 parts called testing and training data set. We applied k- fold <h4 class="sm-txt-manual" style="display: inline;"><a href="https://towardsdatascience.com/why-and-how-to-cross-validate-a-model-d6424b45261f?gi=97d6d3502176" target="_blank">cross validation</a></h4> when training data. The graph shows the variation of the accuracy of the data set for the model with only the genes selected by each method trained upon the above selected best 3 classifiers.</p>
             </hgroup>
           </div>
         </div>
@@ -460,7 +464,7 @@
         <div class="col-md-6">
           <div class="detail-info">
             <hgroup>
-              <p class="det-p-manual">In the first set of graphs, the graph at the right shows the number of genes selected by each feature selection method only (the genes that are also found by another method are excluded in this). The last column refers to the number of “Overlapped” set of genes, that is the genes that are found by all the three methods. The graph at the left shows how the accuracy of the models varies when you only input the gene list selected by each feature selection method only. Here also, we use the same 3 classifiers we used earlier to get the accuracy.</p>
+              <p class="det-p-manual">In the first set of graphs, the graph at the right shows the number of genes selected by each feature selection method excluding the overlapped  gene set. The last column refers to the number of “Overlapped” set of genes, that is the genes that are found by all the three methods. The graph at the left shows how the accuracy of the models varies when you only input the gene list selected by each feature selection method excluding the overlapped set. Here also, we use the same 3 classifiers we used earlier to get the accuracy.</p>
             </hgroup>
           </div>
         </div>
@@ -488,7 +492,7 @@
         <div class="col-md-6">
           <div class="detail-info">
             <hgroup>
-              <p class="det-p-manual">The third section of this page shows the set of the correlation matrix. We plot these, to identify the highly correlated genes. Here, we plot the correlation matrix for the genes that are selected by only one method, for example, if we have selected the best 50 genes by all the 3 feature selection methods and 20 genes out of these can only be found by PCA, we have plotted the correlation matrix for those 20 genes. Likewise, we have repeated the same for the genes found only by the other 2 feature selection methods as well.</p>
+              <p class="det-p-manual">The third section of this page shows the set of the correlation matrix. We plot these, to identify the highly correlated genes. Here, we plot the correlation matrix for the genes that are selected by one method , for example, if we have selected the best 50 genes by all the 3 feature selection methods and 10 genes out of these can be found in the overlapped set, we have plotted the correlation matrix for those 40 (50-10) genes. Likewise, we have repeated the same for the genes found by the other 2 feature selection methods as well.</p>
             </hgroup>
           </div>
         </div>
@@ -510,9 +514,9 @@
           <div class="detail-info">
             <hgroup>
              <ul style="list-style-type: square; text-align: justify;">
-                <li><b>PCA:</b> Gene lists found only by PCA and not by Random Forest and Extra Tree Classifier.</li>
-                <li><b>Random Forest:</b> Gene lists found only by PCA and not by random forest and Extra Tree Classifier.</li>
-                <li><b>Extra Tree Classifier:</b> You can choose the minimum value of all the values corresponding to a particular gene symbol for each sample.Gene lists found only by Extra Tree Classifier and not by Random Forest and PCA.</li>
+                <li><b>PCA:</b> Gene lists found only by PCA excluding the overlapped set.</li>
+                <li><b>Random Forest:</b> Gene lists found only by Random Forest excluding the overlapped set.</li>
+                <li><b>Extra Tree Classifier:</b> Gene lists found only by Extra Tree Classifier excluding the overlapped set.</li>
               </ul>              
               <p class="det-p-manual">You can choose which data set you want to proceed with by selecting one out of the above 3 lists. Usually, to reduce redundancy, it is recommended to use the gene list with the least correlation, which is the plot with the highest color variation.</p>
             </hgroup>
@@ -635,7 +639,7 @@
         <div class="col-md-6">
           <div class="detail-info">
             <hgroup>
-              <p class="det-p-manual">Now, you have obtained the best biomarker genes for a particular target variable (samples with Alzheimer’s disease or not, samples with breast cancer or not etc). We have used machine learning and statistical methods and have chosen the best method mathematically. However, it’s better if we can validate the biological relevance of our result. For that, we use data in GeneCards to validate our results. For that choose the disease you want to compare the results with and proceed.</p>
+              <p class="det-p-manual" style="display: inline;">Now, you have obtained the best biomarker genes for a particular target variable (samples with Alzheimer’s disease or not, samples with breast cancer or not etc). We have used machine learning and statistical methods and have chosen the best method mathematically. However, it’s better if we can validate the biological relevance of our result. For that, we use data in <h4 class="sm-txt-manual" style="display: inline;"><a href="https://www.genecards.org/" target="_blank">GeneCards</a></h4> to validate our results. For that choose the disease you want to compare the results with and proceed.</p>
             </hgroup>
           </div>
         </div>
