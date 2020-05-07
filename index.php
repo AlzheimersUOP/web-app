@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>GeNet</title>
+  <title>GeNet Guide</title>
 
   <link rel="icon" href="img/logo/favicon.png" sizes="32x32" />
   <link rel="icon" href="img/logo/favicon.png" sizes="192x192" />
@@ -33,7 +33,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{ url_for('index') }}">
+        <a class="navbar-brand">
             <img src="img/logo/logo.png" alt="logo" style="width:115px; margin-top: -3px;">
         </a>
       </div>
