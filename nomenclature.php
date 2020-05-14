@@ -44,7 +44,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{ url_for('index') }}">
+        <a class="navbar-brand" href="index.php">
             <img src="img/logo/logo.png" alt="logo" style="width:115px; margin-top: -3px;">
         </a>
       </div>
@@ -120,7 +120,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="contactform/subscribe.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="js/sweetalert2@9.js"></script>
 
 <script type="text/javascript">
 

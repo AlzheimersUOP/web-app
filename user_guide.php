@@ -48,7 +48,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{ url_for('index') }}">
+        <a class="navbar-brand" href="index.php">
             <img src="img/logo/logo.png" alt="logo" style="width:115px; margin-top: -3px;">
         </a>
       </div>
@@ -103,7 +103,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_1/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_1/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -156,7 +156,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_2/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_2/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -210,7 +210,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_21/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_21/img1.jpg" style="width:100%;">
                 </div>
                 <div class="item">
                   <img src="img/manual/step_21/img2.jpg" style="width:100%;">
@@ -266,7 +266,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_3/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_3/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -323,7 +323,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_4/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_4/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -357,7 +357,7 @@
               <ul style="list-style-type: square; text-align: justify;">
                 <li>Choose your data set by clicking on the drop-down menu in the “Available Files” tab. The drop-down will show you the list of already uploaded data sets.</li>
                 <li>Choose the corresponding annotation table by clicking on the drop-down menu of the “Annotation Table” tab.</li>
-                <li>Select any Probe Selection method from the drop-down menu of the Probe Selection method.</li>
+                <li>Select any Probe Selection method from the drop-down menu of the Probe Selection method. You can choose 'other' option and upload a custom annotation table also.</li>
                 <li>If you want to proceed without mapping to gene symbols, click “SKIP MAPPING” button.</li>
                 <li>If you want to map the probe_IDs to gene symbols click “SUBMIT”.</li>
                 <li>If you want to get a quick glance at your data set, you can do so by clicking on the “View” button.</li>
@@ -389,7 +389,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_5/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_5/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -439,7 +439,7 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <img src="img/manual/step_6/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_6/img1.jpg" style="width:100%;">
                 </div>
             </div>
           </div>
@@ -476,7 +476,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_7/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_7/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -500,7 +500,7 @@
             <hgroup>
               <h3 class="det-txt-manual">Normalization and Imputation</h3>
               <ul style="list-style-type: square; text-align: justify;">
-                <li>Select the scaling method by clicking on the drop-down menu in the scaling tab.</li>
+                <li>Select the normalization method by clicking on the drop-down menu in the scaling tab.</li>
                 <li>Select how you wish to handle the missing values by choosing a method from the Imputation tab.</li>
                 <li>If you are all set, click on “PRE_PROCESS”.</li>
               </ul>
@@ -522,7 +522,7 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <img src="img/manual/step_8/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_8/img1.jpg" style="width:100%;">
                 </div>
             </div>
           </div>
@@ -562,7 +562,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_9/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_9/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -623,7 +623,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_10/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_10/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -680,7 +680,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_11/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_11/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -740,7 +740,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_12/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_12/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -803,7 +803,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_13/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_13/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -856,7 +856,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_14/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_14/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -914,7 +914,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_15/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_15/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -972,7 +972,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_16/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_16/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -1029,7 +1029,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_17/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_17/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -1089,7 +1089,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_18/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_18/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -1148,7 +1148,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_19/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_19/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -1200,7 +1200,7 @@
               <div class="carousel-inner">
 
                 <div class="item active">
-                  <img src="img/manual/step_20/img1.jpg" style="width:100%;">
+                  <img class="lazy" data-original="img/manual/step_20/img1.jpg" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -1252,5 +1252,15 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="contactform/subscribe.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="js/sweetalert2@9.js"></script>
+<script src="js/1_9_7_jquery.lazyload.js"></script>
 
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $('img.lazy').lazyload({
+    effect: "fadeIn"
+  });
+});
+
+</script>

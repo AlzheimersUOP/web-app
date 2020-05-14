@@ -32,7 +32,25 @@
   .answer_faq{
     display: none;
   }
-
+  .detail-info{
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .quetion_icon_tag{
+    position: absolute;
+    top: 3px;
+    left: 2px;    
+  }
+  .icon_background{
+    position: absolute;
+    top: -16px;
+    left: 2px;    
+    width: 35px;
+    height: 38px;
+    background-color: white;
+  }
 </style>
 
 <body>
@@ -45,7 +63,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{ url_for('index') }}">
+        <a class="navbar-brand" href="index.php">
             <img src="img/logo/logo.png" alt="logo" style="width:115px; margin-top: -3px;">
         </a>
       </div>
@@ -88,24 +106,43 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
+          <div class="icon_background">
+            <i class="fa fa-question-circle fa-2x quetion_icon_tag" aria-hidden="true" style="color: #5fcf80"></i>
+          </div>
           <div class="detail-info">
             <hgroup>
-              <h3 class="det-txt-manual h3_faq">01. Is inclusive quality education affordable?</h3>
-              <p class="det-p-manual answer_faq">Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tinciduntconvallis id id nisi in interdum.</p>
+              <h3 class="det-txt-manual h3_faq">01. Who can use GeNet?</h3>
+              <p class="det-p-manual answer_faq">GeNet was designed for the use of people in every field in bioinformatics, statistics and computer science. This can be used for the easy analysis of gene expression data which is used in many medical researches.</p>
             </hgroup>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
+          <div class="icon_background">
+            <i class="fa fa-question-circle fa-2x quetion_icon_tag" aria-hidden="true" style="color: #5fcf80"></i>
+          </div>
           <div class="detail-info">
             <hgroup>
-              <h3 class="det-txt-manual h3_faq">02. Is inclusive quality education affordable?</h3>
-              <p class="det-p-manual answer_faq">Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum. Donec et lectus bibendum dolor</p>
+              <h3 class="det-txt-manual h3_faq">02. Do we need to have any background knowledge to use GeNet?</h3>
+              <p class="det-p-manual answer_faq">GeNet facilitates a graphical user interface which is very easy to understand even for a person without much computer knowledge. We have provided a user guide for anyone who needs basic instructions to follow the steps. In addition, GeNet manual includes in detail information on each step. Anyone who prefer visual aid can follow up GeNet crash course.</p>
             </hgroup>
           </div>
         </div>
-      </div>      
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="icon_background">
+            <i class="fa fa-question-circle fa-2x quetion_icon_tag" aria-hidden="true" style="color: #5fcf80"></i>
+          </div>
+          <div class="detail-info">
+            <hgroup>
+              <h3 class="det-txt-manual h3_faq">03. What kind of files can be input to the system?</h3>
+              <p class="det-p-manual answer_faq">Users can upload files in .csv files. The format of the files to be uploaded in each step is described in the <a href="manual.php#upload_link" target="_blank">GeNet manual</a>.</p>
+            </hgroup>
+          </div>
+        </div>
+      </div>             
     </div>
   </section>
   <!--/ step_1-->
@@ -121,7 +158,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="contactform/subscribe.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="js/sweetalert2@9.js"></script>
 
 <script type="text/javascript">
 

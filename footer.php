@@ -29,8 +29,8 @@
       </form>
       <!-- End newsletter-form -->
       <ul class="social-links">
-        <li><a href="#link"><i class="fa fa-youtube-play fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa fa-github fa-fw fa-fw"></i></a></li>
+        <li><a href="#link" target="_blank"><i class="fa fa-youtube-play fa-fw"></i></a></li>
+        <li><a href="https://github.com/AlzheimersUOP/Alz-App" target="_blank"><i class="fa fa fa-github fa-fw fa-fw"></i></a></li>
       </ul>
       ©2020 GeNet team. All rights reserved
       <div class="credits">
@@ -45,3 +45,13 @@
     </div>
   </footer>
   <!--/ Footer-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165886163-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165886163-1');
+</script> -->

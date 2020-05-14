@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>GeNet</title>
+  <title>GeNet Guide</title>
 
   <link rel="icon" href="img/logo/favicon.png" sizes="32x32" />
   <link rel="icon" href="img/logo/favicon.png" sizes="192x192" />
@@ -33,7 +33,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{ url_for('index') }}">
+        <a class="navbar-brand">
             <img src="img/logo/logo.png" alt="logo" style="width:115px; margin-top: -3px;">
         </a>
       </div>
@@ -43,7 +43,7 @@
           <li><a href="user_guide.php">User guide</a></li>
           <li><a href="manual.php">Manual</a></li>
           <li><a href="nomenclature.php">Nomenclature</a></li>
-          <li><a href="crash_course.php">Crash course</a></li>
+          <li><a href="crash_courses.php">Crash course</a></li>
           <li><a href="faq.php">Faq</a></li>
 <!--           <li class="btn-trial"><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li> -->
         </ul>
@@ -136,6 +136,18 @@
           <p>Microarray is a widely used technology in biomedical research. The proper analysis of microarray gene expression data is used in revealing underlying mechanisms of biological processes. To make this process easier, we present you GeNet, an easy to use python-based web application integrated with a machine learning framework and statistical methods. GeNet is designed carefully targeting a wide range of users. Bio informaticians, researchers, computer scientists, statistical analysts, etc can use the application without prior knowledge in other fields. It provides a hassle-free and interactive user experience that makes the analysis process much simpler and enjoyable. GeNet provides many analysis steps including different techniques for pre-processing, visualization, modeling, prediction, and validation of the results with a user-friendly GUI. Get started and explore more with GeNet.</p>
           <hr class="bottom-line">
         </div>
+      </div>
+      <div class="row">
+  <!-- Modal -->
+    <div class="modal-dialog-1">
+      <div class="modal-content" style="box-shadow: none; border: 2px solid #5fcf80">
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9" style="box-shadow: none;">
+              <iframe src="https://www.youtube.com/embed/yz04R_PKH2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
       </div>
 <!--       <div class="row">
         <div class="header-section text-center">
@@ -629,7 +641,7 @@
 
           <div class="col-md-6 col-sm-6 col-xs-12 right">
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <textarea class="form-control text-div-tag" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
               <div class="validation"></div>
             </div>
           </div>
@@ -657,4 +669,4 @@
 <script src="js/custom.js"></script>
 <script src="contactform/contactform.js"></script>
 <script src="contactform/subscribe.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="js/sweetalert2@9.js"></script>
