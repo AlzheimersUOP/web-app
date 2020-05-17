@@ -1,9 +1,9 @@
 <?php
 
-    $servername = "localhost";
-    $username = "genetlab_db_user";
-    $password = "12ggd%^&#dma#";
-    $dbname = "genetlab_genet";
+    $servername = "";
+    $username = "";
+    $password = "";
+    $dbname = "";
 
     // Create connection
     $connection = new mysqli($servername, $username, $password, $dbname);
